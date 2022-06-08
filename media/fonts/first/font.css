@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Sedgwick Ave';
+    src: url('SedgwickAve-Regular.eot');
+    src: local('Sedgwick Ave Regular'), local('SedgwickAve-Regular'), url('SedgwickAve-Regular.eot?#iefix') format('embedded-opentype'), url('SedgwickAve-Regular.woff2') format('woff2'), url('SedgwickAve-Regular.woff') format('woff'), url('SedgwickAve-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

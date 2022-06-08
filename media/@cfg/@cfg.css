@@ -1,0 +1,400 @@
+/*Default*/
+
+:root {
+    --color1: #276ef5;
+    --color2: #276ef5;
+    --color3: #276ef5;
+    --hover: #276ef5;
+    --fstyle: #fff;
+    --themecolor: #276ef5;
+    --font2: "Inter";
+}
+
+.header__nav .social-link a {
+    color: #fff !important;
+}
+
+* {
+    font-family: "Inter", sans-serif !important;
+}
+
+body {
+    background-color: #09090b !important;
+    color: var(--fstyle);
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+    overflow-x: hidden;
+}
+
+.bg {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../media/bg/Blur_bg.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+    z-index: -1;
+    /* filter: blur(.1rem); */
+}
+
+.bg::before {
+    content: "";
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../media/bg/Sneakers.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+    z-index: -2;
+}
+
+.bg::after {
+    content: "";
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 2;
+}
+
+.theme-color-4,
+.yellow-color {
+    color: var(--themecolor) !important;
+}
+
+.header__logo img {
+    width: auto;
+    height: 28px;
+}
+
+.default-btn {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 1.7rem;
+    line-height: 40px;
+    border-radius: 99px;
+    font-size: 1rem;
+    transform-origin: right;
+    transition: all .3s ease;
+}
+
+.default-btn:hover {
+    color: #0d0f19;
+    text-shadow: 0 0 8px rgba(13, 15, 25, .5);
+    background-size: 200% 100%;
+}
+
+.main-h1 {
+    position: relative;
+    max-width: 726px;
+    font-weight: 800;
+    letter-spacing: .05em;
+    line-height: calc(.9rem + 2vw);
+    font-size: calc(1rem + 2vw);
+    font-family: "Inter", sans-serif !important;
+    color: var(--fstyle) !important;
+}
+
+.main-h1::after {
+    content: "";
+    position: absolute;
+    bottom: -3rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../media/bg/name.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: left;
+}
+
+.theme-color-4 {
+    font-family: "Inter", sans-serif !important;
+}
+
+.main-subtitle {
+    color: var(--fstyle);
+    margin-top: 4rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .main-h1::after {
+        background-position: center;
+    }
+    .banner-content p {
+        margin-top: 4rem;
+    }
+}
+
+.header a {
+    color: #000;
+}
+
+/*FORM*/
+
+.form__submit {
+    width: 100%;
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #276ef5;
+    transform-origin: center;
+    border: 0px solid #000;
+    transition: all .3s ease;
+    font-family: "font2", sans-serif !important;
+    border-radius: 8px;
+}
+
+.form__submit:hover {
+    transform: scale(.96);
+    background-color: #fff;
+    color: #276ef5;
+    transition: all .3s ease;
+}
+
+#payment-modal>*,
+.progress__container>*,
+#payment-info-text *,
+#ape-number *,
+#ape-total * {
+    font-family: "Inter", sans-serif !important;
+    color: var(--fstyle) !important;
+}
+
+/*CARDS*/
+
+.nft-item.home-4 .nft-inner {
+    background-color: #000;
+    border: 2px solid transparent;
+    border-image: linear-gradient(180deg, var(--color1) -50%, var(--color2) 50%, rgba(235, 188, 74, 0) 150%);
+    border-image-slice: 1;
+}
+
+.nft-inner *:not(.price) {
+    color: #fff !important;
+}
+
+/*finform*/
+
+.modal__window {
+    border: 2px solid transparent;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-image: linear-gradient(180deg, #f1dcaa -50%, #ebbc4a 50%, rgba(235, 188, 74, 0) 150%);
+    border-image-slice: 100%;
+    border-image-slice: 1;
+}
+
+.modal__header1,
+.modal__header2 {
+    color: #4754ff;
+}
+
+/*FOOTER*/
+
+.footer-section {
+    /*    background-color: rgba(255,255,255,0.8);*/
+}
+
+.footer-newsletter .container * {
+    color: var(--fstyle);
+}
+
+.footer-newsletter .container i {
+    color: invert(var(--fstyle));
+}
+
+form input::placeholder {
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+.token {
+    margin-left: .35rem;
+    color: var(--themecolor) !important;
+}
+
+.footer-top form input {
+    color: #ffffff;
+    border: 1px solid #575757;
+    background-color: #282828;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    height: 50px;
+}
+
+.footer-section.style-4 .footer-top form button {
+    color: #000;
+    border-radius: .5rem;
+}
+
+.footer-top form button,
+.footer-section.style-4 .footer-top .social-link a {
+    cursor: pointer;
+    transition: all .2s linear;
+    font-weight: bold;
+    font-family: "Inter", sans-serif !important;
+    color: #fff !important;
+    background-color: #276ef5 !important;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0 15px;
+    display: block;
+    margin-right: -.5rem;
+}
+
+.footer-section.style-4 .footer-top form button:hover {
+    color: var(--hover) !important;
+    transform: scale(1.02) translateY(-50%);
+}
+
+.footer-section.style-4 .footer-top .social-link a:hover {
+    color: var(--hover) !important;
+    transform: scale(1.02);
+}
+
+a:hover {
+    color: var(--hover) !important;
+}
+
+/*ALERT*/
+
+.custom-social-proof {
+    display: none;
+    color: var(--fstyle) !important;
+    background-color: #000;
+    padding: 5px 15px 0px 15px;
+    border-radius: 10px;
+    border: 2px solid var(--color2);
+}
+
+@media (max-width: 868px) {
+    .header__logo {
+        padding-right: 0rem;
+        margin-right: 0rem;
+        width: 180px;
+        border-right: none;
+        justify-content: center;
+    }
+    .header__actions {
+        display: none;
+    }
+    .custom-social-proof {
+        background-color: rgb(15, 17, 27);
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 90%;
+    }
+    #product {
+        font-size: calc(0.6rem + 1vw);
+        display: block;
+        white-space: normal;
+        word-break: break-all;
+    }
+    #claim-text-wrapper,
+    #mints {
+        width: 100% !important;
+    }
+}
+
+/* Optional */
+
+/* FORM */
+
+.form__input {
+    border: 3px solid var(--main_color1);
+    border-radius: 0.5rem;
+}
+
+.form__input--invalid {
+    border-color: #f00;
+}
+
+.form__inputfocus {
+    /*    background-color: #4754ff;*/
+}
+
+/* secondform */
+
+#payment-info {
+    border: 2px solid var(--color1);
+    /*    background-color: rgba(0, 0, 0, 0.5);*/
+}
+
+#ape-number {
+    border: 2px solid var(--color1);
+    /*    background-color: rgba(0, 0, 0, 0.5);*/
+}
+
+#ape-total {
+    border-top: 2px solid var(--color1);
+    border-bottom: 2px solid var(--color1);
+    /*    background-color: rgba(0, 0, 0, 0.5);*/
+}
+
+.bar-done {
+    font-weight: bolder;
+    color: #fff;
+    height: 100%;
+    background: linear-gradient(90deg, var(--color1), var(--color2));
+    border-radius: 20px;
+    display: grid;
+    text-align: right;
+    width: 0;
+    box-shadow: 0 0 3px -5px #ef2b63, 0px 3px 150px #ef2b63;
+    transition: width .5s ease;
+}
+
+.progress__container {
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    border: 2px solid transparent;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-image: linear-gradient(180deg, var(--color1) -50%, var(--color2) 50%, rgba(235, 188, 74, 0) 150%);
+    border-image-slice: 100%;
+    border-image-slice: 1;
+    box-shadow: 0 0 10px rgba(3, 0, 16, .2);
+    margin: 3rem 0;
+}
+
+.video {
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .video {
+        display: none;
+    }
+}
